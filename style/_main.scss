@@ -1,0 +1,62 @@
+/*Inicio Body*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* DISEÑO MOBILE FIRST */
+main {
+    padding: 10px 8px;
+    div{
+        section{
+            padding: 10px 1px;
+            h2{
+                @extend %title;  
+            }
+            p {
+                @extend %paragraf;
+            }
+        }
+    
+    }
+}
+/* ¿Es necesario o lo toma de main{} ?*/
+
+.Side_Bar{
+    h2{
+        @extend %title;
+    }
+    p{
+        @extend %paragraf;
+    }
+}
+
+/* Pantalla desktop */
+@media screen and (min-width: 321px){
+    main{
+        div{
+            max-width: 500px;
+            section{
+                    display: inline-block;
+                    h2{
+                    @extend %TitleDesck;
+                    }
+                    p{
+                    @extend %ParagrafDesck;
+                    }
+                }
+        }
+        .Side_Bar{
+                display: inline-block;
+                max-width: 300px;
+                background-color: blanchedalmond;
+                    h2{
+                        @extend %TitleDesck;
+                    }
+                    p{
+                        @extend %ParagrafDesck;
+                    }
+                }
+    }
+}
+
+/*Fin Body*/

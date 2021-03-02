@@ -1,0 +1,60 @@
+/*Inicio Header*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header section h1{
+    display: block;
+    position: relative;
+    margin: right;
+    color: gray;
+    
+}
+/* DISEÑO MOBILE FIRST */
+
+/* Menu principal*/
+.Menu{
+    list-style: none;
+    display: none;
+    
+}
+header section img{
+    display: none;
+}
+
+/* Pantalla mobile
+Menu hamburguesa*/
+.Hmenu{
+    display: inline-block;
+    float:none;
+    position: sticky;
+    top: 1px;
+     /* overflow: hidden; No se aún para que funciona*/
+    background-color: white;
+    font-size: 1.5em;
+    border-radius: 30%;
+
+}
+.Hmenu::after{
+    content: "☰";
+    font-size: 26px;
+}
+
+/* Pantalla desktop*/
+@media screen and (min-width: 321px){
+    .Menu{
+        list-style: none;
+        display: inline-block;
+    }
+    header section img{
+        display: inline-block;
+        width: 100%;
+        object-fit: cover;
+        height: 180px;
+    }
+    .Hmenu{
+        display: none;
+    }
+}
+
+/*Fin Header*/

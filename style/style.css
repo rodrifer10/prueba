@@ -1,0 +1,119 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header section h1 {
+  display: block;
+  position: relative;
+  margin: right;
+  color: gray;
+}
+
+/* DISEÑO MOBILE FIRST */
+/* Menu principal*/
+.Menu {
+  list-style: none;
+  display: none;
+}
+
+header section img {
+  display: none;
+}
+
+/* Pantalla mobile
+Menu hamburguesa*/
+.Hmenu {
+  display: inline-block;
+  float: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1px;
+  /* overflow: hidden; No se aún para que funciona*/
+  background-color: white;
+  font-size: 1.5em;
+  border-radius: 30%;
+}
+
+.Hmenu::after {
+  content: "☰";
+  font-size: 26px;
+}
+
+/* Pantalla desktop*/
+@media screen and (min-width: 321px) {
+  .Menu {
+    list-style: none;
+    display: inline-block;
+  }
+  header section img {
+    display: inline-block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 180px;
+  }
+  .Hmenu {
+    display: none;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* DISEÑO MOBILE FIRST */
+main div section h2, .Side_Bar h2 {
+  font-family: "Stick", sans-serif;
+  font-size: 18px;
+  color: #df1f1f;
+}
+
+main div section p, .Side_Bar p {
+  color: #1f22df;
+}
+
+main {
+  padding: 10px 8px;
+}
+
+main div section {
+  padding: 10px 1px;
+}
+
+/* Pantalla desktop */
+@media screen and (min-width: 321px) {
+  main {
+    /*        .Side_Bar{
+        display: inline-block;
+        max-width: 300px;
+        background-color: blanchedalmond;
+        font-family: $font-secundary;
+        font-size: $font-size-s;
+        color:$font-color-s;
+                p{
+                color: black;
+                } */
+  }
+  main div {
+    max-width: 500px;
+  }
+  main div section {
+    display: inline-block;
+  }
+  main div section h2 {
+    font-family: "Stick", sans-serif;
+    font-size: 32px;
+    color: #1f22df;
+  }
+  main div section p {
+    color: black;
+  }
+}
+
+main {
+  background-color: #43e97b;
+}
+/*# sourceMappingURL=style.css.map */

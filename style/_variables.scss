@@ -1,0 +1,29 @@
+/* Variable de Colores*/
+$bc-primary: #43e97b;
+$bc-secundary: #38f9d7;
+$font-primary: "Stick", sans-serif;
+$font-size-p: 18px;
+$font-color-p: #df1f1f;
+$font-secundary: "Stick", sans-serif;
+$font-size-s: 32px;
+$font-color-s: #1f22df;
+
+/*Parrafos y Titulos*/
+%title {
+    font-family: $font-primary;
+    font-size: $font-size-p;
+    color: $font-color-p;    
+}
+%paragraf {
+    color: $font-color-s;
+}
+
+%TitleDesck{
+    font-family: $font-secundary;
+    font-size: $font-size-s;
+    color: $font-color-s; 
+}
+
+%ParagrafDesck{
+    color: black;
+}
